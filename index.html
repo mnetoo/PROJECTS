@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/check.png">
+  <title>ToDo</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="to-do">
+    <header>
+      <p>ToDo List</p>
+      <button aria-label="Excluir tarefas"><i class="bx bxs-trash-alt"></i></button>
+    </header>
+
+    <hr />
+    <br>
+
+    <div class="divInsert">
+      <input class="textInsert" type="text" placeholder="Add task" />
+      <button aria-label="Adicionar tarefa"><i class="bx bx-plus"></i></button>
+    </div>
+
+    <ul></ul>
+  </div>
+
+  <!-- Modal para excluir todas as tarefas -->
+  <div id="modalAll" class="modal">
+    <div class="modal-content">
+      <p class="modal-text">Você tem certeza que deseja excluir todas as tarefas?</p>
+      <button class="modal-confirm" id="confirmDeleteAll">Confirmar</button>
+      <button class="modal-cancel" id="cancelDeleteAll">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- Modal para excluir uma tarefa específica -->
+  <div id="modalSingle" class="modal">
+    <div class="modal-content">
+      <p class="modal-text">Você tem certeza que deseja excluir esta tarefa?</p>
+      <button class="modal-confirm" id="confirmDeleteSingle">Confirmar</button>
+      <button class="modal-cancel" id="cancelDeleteSingle">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="./javascript/todo.js"></script>
+</body>
+
+</html>
