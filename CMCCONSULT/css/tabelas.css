@@ -1,0 +1,140 @@
+.tabela{
+    grid-column-start: 2 !important;
+    grid-column-end: 2;
+}
+
+.titulo {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: white;
+    color: rgb(243, 147, 21);
+    font-weight: 500;
+    padding: 0px 10px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 0.5px solid #dee2e6;
+    border-left: 0.5px solid #dee2e6;
+    border-right: 0.5px solid #dee2e6;
+    border-top: 0.5px solid #dee2e6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.linha{
+    border-bottom: 0.5px solid #dee2e6;
+    border-left: 0.5px solid #dee2e6;
+    border-right: 0.5px solid #dee2e6;
+    column-gap: 1vw;
+    padding: 0 1vw 0 1vw;
+}
+
+.branca{
+    background-color: white;
+}
+
+.cinza{
+    background-color: #f2f2f2;
+}
+
+.amarelo{
+    background-color: rgb(241, 230, 76);
+}
+
+.azul{
+    background-color: rgb(107, 181, 250);
+}
+
+.verde{
+    background-color: rgb(152, 250, 107);
+}
+
+.fim {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bordaEsquerda{
+    border-left: 0.5px solid #dee2e6;
+    padding-left: 1vw;
+}
+
+.bordaDireita{
+    border-right: 0.5px solid #dee2e6;
+    padding-right: 1vw;
+}
+
+/*==================================================================================================================================*/
+.umaColunas .linha {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.duasColunas .linha {
+    display: grid;
+    grid-template-columns: 0.16fr 1.7fr;
+}
+
+.tresColunas .linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quatroColunas .linha {
+    display: grid;
+    grid-template-columns: 0.34fr 1.45fr 0.5fr 1.5fr;
+}
+
+.seisColunas .linha {
+    display: grid;
+    grid-template-columns: 0.55fr 1.45fr 0.8fr 1.2fr 0.5fr 1.5fr;
+}
+
+.oitoColunas .linha {
+    display: grid;
+    grid-template-columns: 0.75fr 1.35fr 0.65fr 1.35fr 0.8fr 1.2fr 0.25fr 1.75fr;
+}
+
+.ocupa2 {
+    grid-column: span 2;
+  }
+/*==================================================================================================================================*/
+.central {
+    align-items: center;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 10vh;
+    padding: 5vh;
+    text-align: center;
+}
+
+.quadroBranco {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease, background-color 0.9s ease;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(3, 28, 53);
+}
+
+
+.quadroBranco:hover {
+    transform: translateY(-2px);
+}
+
+.form-control {
+    resize: none;
+    margin: 10px;
+}   
+
+p a {
+    text-decoration: none;
+}

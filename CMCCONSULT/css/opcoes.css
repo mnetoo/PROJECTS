@@ -1,0 +1,62 @@
+/*BARRA LATERAL MENOR*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    text-align: center;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.9fr 1.2fr 1.9fr;
+    row-gap: 2vh;
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 17px;
+    row-gap: 8px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botaoAzul{
+    background-color: rgb(3, 28, 53) !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.botaoAzul:hover {
+
+    color: white;
+
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

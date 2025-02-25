@@ -1,0 +1,107 @@
+/*BARRA LATERAL MENOR*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+html {
+    text-align: center;
+}
+
+p {
+    padding-top: 5vh;
+    font-size: 14px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.8fr 2.4fr 1.8fr;
+  row-gap: 2vh;
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+.login {
+  grid-column-start: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(3, 28, 53);
+  padding: 35px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login input {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.login p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+.login img {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-login {
+  width: 20%;
+  height: 35px;
+  background-color:white;
+  border: none;
+  border-radius: 9px;
+  color: rgb(3, 28, 53);
+  margin-top: 25px;
+}
+
+.btn-login:hover {
+  background-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+} 
+ 
+ /* Estilos para celular (até 767px de largura) */
+  @media (max-width: 767px) {
+    .form-container {
+      width: 70%;
+    }
+  }
+  /* Estilos para iPad/Tablet (largura mínima de 768px e largura máxima de 1200px)*/
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .form-container {
+      width: 35%;
+    }
+  }
+  
+  /* Botão "Acessar" */
+  #acessar {
+    width: 60%;
+    background-color: #f3f3f3;
+    color: #5e5e5c;
+  }
+  
+  #acessar:hover {
+    background-color: #e3e3e3;
+  }

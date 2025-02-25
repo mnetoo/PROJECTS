@@ -1,0 +1,54 @@
+header {
+    background-color: rgb(3, 28, 53);
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    column-gap: 2vh;
+    padding: 2vh 3rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Celular */
+@media screen and (max-width: 767px) {
+    header {
+        font-size: 12px;
+        padding: 2vh 1rem !important;
+        column-gap: 0.5vh !important;
+    }
+    header img {
+        height: 3vh !important;
+    }
+    header p{
+        font-size: 5px !important;
+    }    
+    header a{
+        font-size: 5px !important;
+    }
+    .sislamir{
+        font-size: 40px !important;
+    }
+}
+/* iPad/Tablet */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    header {
+        column-gap: 0.5vh !important;
+    }
+    header img {
+        height: 3vh !important;
+    }
+    header p{
+        font-size: 6px !important;
+    }    
+    header a{
+        font-size: 6px !important;
+    }
+    .sislamir{
+        font-size: 40px !important;
+    }
+}

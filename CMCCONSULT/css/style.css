@@ -1,0 +1,168 @@
+/*BARRA LATERAL MENOR*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    text-align: center;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns:0.1fr 3.8fr 0.1fr;
+    text-align: left;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+main div {
+    align-items: center;
+}
+
+main p {
+    margin: 0;
+    vertical-align: middle;
+    line-height: 3rem;
+}
+
+main input, span {
+    margin: 10px 0px 10px 0px;
+}
+
+/* Regras para a página de impressão */
+@media print {
+    /* Redefinir margens para folha A4 padrão (210 x 297 mm) */
+    @page {
+        margin: 0.5cm;
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+    body{
+      white-space: nowrap;
+      align-items: center;
+      background: none;
+    } 
+    header {
+        display: none;
+    }
+    p {
+        font-size: 12px;
+    }
+    input.form-control{
+      font-size: 7pt;
+      line-height: 0.5; 
+    }
+    select.form-control{
+        font-size: 8pt;
+        line-height: 1.2; 
+      }
+    select.form-select{
+        font-size: 9pt;
+        line-height: 1.2; 
+      }
+    .no-print {
+        display: none; 
+    }
+    form{
+        grid-template-columns: auto 98vw auto !important; /* Divide o main em 3 colunas */
+        row-gap: 0.3vh !important;
+        padding-top: 2vh !important;
+        line-height: 1 !important;
+        font-size: 10pt;
+    }
+  }
+
+
+/* Regras para celular (até 767px de largura) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 5px !important;
+    }
+
+    main {
+        font-size: 5px !important;
+        row-gap: 2vh !important;
+        padding-top: 2vh !important;
+        padding-bottom: 2vh !important;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 5px !important;
+    }
+
+    main p {
+        margin: 0 !important;
+        vertical-align: middle !important;
+        line-height: 1rem !important;
+    }
+}
+
+/* Regras para iPad/Tablet (largura mínima de 768px e largura máxima de 1200px)*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        font-size: 10px !important;
+    }
+
+    main {
+        row-gap: 2vh !important;
+        padding-top: 2vh !important;
+        padding-bottom: 2vh !important;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 10px !important;
+    }
+}
+
+/*ITENS CONTEÚDO DA PÁGINA*/
+
+.botaoAzul{
+    background-color:rgb(3, 28, 53) !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+.botaoAzul:hover {
+
+    color: white;
+
+}
+
+/* Remover setas no Chrome, Safari, Edge e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    background-color: #f2f2f2;
+    border-color: #cccccc;
+}
+  
+.inputButton {
+    margin: 10 -1!important;
+}
